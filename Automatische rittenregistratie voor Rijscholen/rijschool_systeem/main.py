@@ -1,13 +1,13 @@
 from core_logic.tracker import log_trip
 
 while True:
-    instructeur_naam = input("Geef hier de naam van de instructeur in, (of type 'stop' om te stoppen): ").lower()
+    instructure_name = input("Enter the instructor's name here, (or type 'stop' to stop): ").lower()
 
-    if instructeur_naam == "stop":
+    if instructure_name == "stop":
         print("Bye!")
         break
 
-    kilometers = input("Geef hier het aantal gereden kilometers in: ")
+    kilometers = input("Enter the number of kilometers driven here: ")
 
-    resultaat = log_trip(instructeur_naam, kilometers)
-    print(resultaat)
+    result = log_ride(instructure_name, kilometers)
+    print(result)
