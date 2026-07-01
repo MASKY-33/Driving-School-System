@@ -1,7 +1,7 @@
 # Data-loop
 
 
-def log_trip(instructure_name, kilometers):
+def log_ride(instructure_name, kilometers):
 
     try:
         transformed_kilometers = float(kilometers)
