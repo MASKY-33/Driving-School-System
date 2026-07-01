@@ -1,16 +1,16 @@
 # Data-loop
 
 
-def log_trip(instructeur_naam, kilometers):
+def log_trip(instructure_name, kilometers):
 
     try:
-        getransformeerde_kilometers = float(kilometers)
+        transformed_kilometers = float(kilometers)
 
         with open("ritten_log.txt", "a") as file:
-            file.write(f"Instructeur: {instructeur_naam} | Gereden: {getransformeerde_kilometers} km\n")
-            return "Rit succesvol opgeslagen op de schijf!"
+            file.write(f"Instructure: {instructure_name} | Driven: {transformed_kilometers} km\n")
+            return "Ride successfully saved to disk!"
     
     except ValueError:
-        return "Fout: Kilometers moeten in cijfers worden ingevoerd!"
+        return "Error: Kilometers must be entered in figures!"
     except IOError:
-        return "Systeemfout: Harde schijf is niet bereikbaar! Rit kan niet worden opgeslagen."
+        return "System error: Hard drive is unreachable! Ride cannot be saved."
