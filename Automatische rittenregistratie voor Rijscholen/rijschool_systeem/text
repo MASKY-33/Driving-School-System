@@ -1,0 +1,7 @@
+rijschool_systeem/
+│
+├── main.py                  <-- De Motor (Interactie met de instructeur)
+│
+└── core_logic/              <-- Dit is de "Package" (De slimme hoofdmap)
+    ├── __init__.py          <-- Wet: Leeg bestand om de map een Package te maken!
+    └── tracker.py           <-- De Module (Bevat de File Handling & Logica)
